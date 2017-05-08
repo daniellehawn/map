@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <title>Welcome to Seattle</title>
+  </head>
+<body>
+
+<div class="container-fluid">
+  <header>
+      <h1>Seattle Landmarks</h1>
+  </header>
+  
+  <section>
+    <h3>Explore some Seattle Landmarks and Institutions</h3>
+    <form>
+              <select class="custom-select" name="selectInput" id="selectInput" size ="4" single>
+                <option id="selectInput" value="Fremont Troll" data-src="https://maps.googleapis.com/maps/api/staticmap?center=47.6509704,-122.3472603&zoom=13&scale=1&size=600x300&maptype=roadmap&key=AIzaSyBHHlj36CyQpYqDeQSF9wgaakRZxU8uK7g&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x008080%7Clabel:1%7C47.6509704,-122.3472603">Fremont Troll</option>
+                <option id="selectInput" value="Alki Beach" data-src="https://maps.googleapis.com/maps/api/staticmap?center=47.5790755,-122.4136163&zoom=13&scale=1&size=600x300&maptype=roadmap&key=AIzaSyBHHlj36CyQpYqDeQSF9wgaakRZxU8uK7g&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xffff00%7Clabel:1%7C47.5790755,-122.4136163">Alki Beach</option>
+                <option id="selectInput" value="Dick's Drive-In" data-src="https://maps.googleapis.com/maps/api/staticmap?center=47.6193226,-122.3211806&zoom=13&scale=1&size=600x300&maptype=roadmap&key=AIzaSyBHHlj36CyQpYqDeQSF9wgaakRZxU8uK7g&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x0000ff%7Clabel:1%7C47.6193226,-122.3211806" selected>Dick's Drive-In</option>
+                <option id="selectInput" value="Husky Stadium" data-src="https://maps.googleapis.com/maps/api/staticmap?center=47.6503235,-122.3037633&zoom=13&scale=1&size=600x300&maptype=roadmap&key=AIzaSyBHHlj36CyQpYqDeQSF9wgaakRZxU8uK7g&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x8000ff%7Clabel:1%7C47.6503235,-122.3037633">Husky Stadium</option>
+              </select> 
+      </form>
+  </section>
+  <section>
+    <h3 id="locationName"></h3>
+  </section>
+  <section>
+    <div><img id="mapOutput" src=""></div>
+  </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
